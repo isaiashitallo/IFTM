@@ -1,0 +1,25 @@
+/* p é uma tag em html, e um seletor em css */
+/* color é uma propriedade */
+/* red é um valor */
+/* p {color: red;} é uma regra */
+/* {color: red;} é uma declaração de estilo*/
+p {
+    /* color: red; */
+    background-color: lightgray;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 3em;
+    /* font-weight: bold; */
+    font-style: italic;
+    /* text-decoration: underline; */
+}
+
+h1 {
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    font-family: Arial;
+    font-size: 50px;
+    text-decoration: underline;
+    letter-spacing: 10px;
+}
