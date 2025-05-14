@@ -1,0 +1,20 @@
+h1.configuracao {
+    background-color: yellow;
+    color: red;
+}
+
+h2.configuracao {
+    background-color: yellow;
+    color: red;
+    text-decoration: underline;
+}
+
+p.configuracao {
+    background-color: yellow;
+    color: red;
+}
+
+strong.configuracao {
+    background-color: yellow;
+    color: red;
+}
