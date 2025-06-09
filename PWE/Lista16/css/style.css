@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; Alinha um embaixo do outro*/
+    
+}
+.container div {
+    width: 100%;
+    margin: 5px;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    
+    /* border: 1px solid black; */
+}
+
+body {
+    /* justify-content: center; */
+    background-color: black;
+}
+
+section {
+    width: 1000px;
+    margin:auto;
+    background-color: white;
+    padding: 20px;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    padding: 15px;
+}
+
+.modelos > div div {
+    /* border: 1px solid black; */
+    /* text-align: justify; */
+    justify-content: center;
+    width: 100%;
+    /* background-color: red; */
+} 
+
+.modelos > div summary {
+    color: blue;
+    padding: 5px;
+    text-align: justify;
+}
+
+.modelos > div p {
+    /* color: blue; */
+    /* padding: 5px; */
+    text-align: justify;
+}
+
+.modelos > div div img {
+    justify-content: center;
+    text-align: center;
+}
+
+.modelos {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
+
+.modelos h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 150%;
+}
+
+img {
+    /* max-width: 300px;        Ajuste conforme necessário */
+    /* height: auto; */
+    text-align: center;
+    justify-content: center;
+}
+
+/* .agendaReitor2 > div div:nth-of-type(1) {
+    width: 20%;
+}
+
+.agendaReitor3 > div div:nth-of-type(1) {
+    width: 25%;
+} */
