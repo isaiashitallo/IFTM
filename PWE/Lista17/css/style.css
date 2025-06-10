@@ -1,0 +1,114 @@
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        flex-wrap: wrap;
+        /*Alinha um embaixo do outro*/
+
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        padding-top: 20px;
+    }
+
+    .container2 img {
+        /* width: 120px; */
+        height: auto;
+        border-radius: 4px;
+        margin-right: 16px;
+    }
+
+    .container2 .conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .container2 h3 {
+        margin: 0;
+        color: orangered;
+    }
+
+    .container2 p {
+        margin: 4px 0;
+    }
+
+    .container div {
+        width: 100%;
+        margin: 5px;
+        padding: 15px;
+        align-items: center;
+        /* border: 1px solid black; */
+    }
+
+    body {
+        /* justify-content: center; */
+        background-color: black;
+    }
+
+    section {
+        width: 1000px;
+        margin: auto;
+        background-color: white;
+        padding: 0px;
+    }
+
+    h1 {
+        background-color: navy;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 42px;
+    }
+
+    .container>div div {
+        /* border: 1px solid black; */
+        /* text-align: justify; */
+        justify-content: center;
+        width: 100%;
+        /* background-color: red; */
+    }
+/* 
+    .modelos>div summary {
+        color: blue;
+        padding: 5px;
+        text-align: justify;
+    }
+
+    .modelos>div p {
+        /* color: blue; */
+        /* padding: 5px; */
+        /* text-align: justify;
+    }
+
+    .modelos>div div img {
+        justify-content: center;
+        text-align: center;
+    } */ 
+
+    /* .modelos {
+        width: 1200px;
+        margin: auto;
+        text-align: center;
+        background-color: white;
+    }
+
+    .modelos h2 {
+        margin-bottom: 15px;
+        text-align: center;
+        line-height: 150%;
+    } */
