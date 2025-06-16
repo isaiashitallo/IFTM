@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    text-align: center;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+}
+
+header>.img>div {
+    padding: 15px 25px;
+    border-bottom: 3px solid darkred;
+}
+
+header h2 {
+    color: #8B0000;
+    padding-top: 20px;
+}
+
+header div {
+    padding-top: 25px;
+    border-bottom: 4px solid orangered;
+}
+
+.titulo-com-linha {
+  text-align: center;
+  font-weight: bold;
+  color: #8B0000; /* ajuste a cor como preferir */
+  padding-bottom: 10px;
+  border-bottom: 2px solid #8B0000; /* cor e espessura da linha */
+  display: inline-block;
+}
+
+section {
+    text-align: center;
+}
+
+section h3 {
+    font-size: 18px;
+    margin: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+section p {
+    text-align: center;
+    line-height: 1.5;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botao-participar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.botao-participar:hover {
+    background-color:  #a30000;
+}
+
+.section_second {
+    margin: 40px;
+    padding-bottom: 40px;
+    background-color: lightgrey;
+}
+
+section h2 {
+    color: orangered;
+    padding-top: 20px;
+} 
+
+.tecnologias {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Para se adaptar em telas pequenas */
+}
+
+.tecnologia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.tecnologia img {
+    width: 100px;
+    height: auto;
+}
+
+.tecnologia h3 {
+    margin: 15px 0px 10px;
+    font-size: 18px;
+    color: #000;
+}
+
+.tecnologia p {
+    margin-top: 10px;
+    /* width: 300px; */
+    color: #444;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.section_third {
+    padding: 0px 350px 20px 350px;
+    background-color: #fff;
+}
+
+.item-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    gap: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.item-portfolio img {
+    width: 200px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.item-portfolio p {
+    max-width: 500px;
+    font-size: 15px;
+    color: #333;
+    text-align: justify;
+}
+
+.item-portfolio.imagem-esquerda {
+    flex-direction: row-reverse;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
