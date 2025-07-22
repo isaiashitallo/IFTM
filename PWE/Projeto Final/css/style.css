@@ -1,3 +1,11 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'roboto';
+    line-height: 1.7em;
+} */
+
 body {
   margin: 0;
   font-family: Arial;
@@ -47,16 +55,19 @@ nav a:hover {
 
 main {
   padding: 20px;
+  /* border: 1px solid black; */  
 }
 
 section {
   margin-bottom: 30px;
+  /* border: 1px solid black; */
 }
 
 .central {
   max-width: 800px;
   margin: auto;
-  text-align: center;
+  /* border: 1px solid black; */
+  text-align: center;  
 }
 
 .container {
@@ -64,11 +75,13 @@ section {
   flex-wrap: wrap;
   /* padding: 20px 0px; */
   justify-content: space-around;
+  /* margin-top: 20px; */
+  /* margin-bottom: 20px; */
   gap: 20px;
+  /* utilizei o gap pois tanto o padding quanto o margin não davam os espaçamentos entre itens que precisava, w3schools */
 }
 
 .container div {
-  /* flex: 1 1 300px; */
   width: 90%;
   background-color: #fff;
   padding: 15px;
