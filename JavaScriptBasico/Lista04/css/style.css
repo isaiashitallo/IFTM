@@ -1,0 +1,89 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Título */
+h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Botão */
+form {
+  margin-bottom: 20px;
+}
+
+#btnGerarResultado {
+  background-color: green;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btnGerarResultado:hover {
+  background-color: darkgreen;
+}
+
+/* Container dos candidatos */
+.candidatos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+/* Card */
+.card {
+  border: 3px solid #000;
+  border-radius: 60px;
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Imagem do candidato */
+.card img {
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Nome */
+.card .nome {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+/* Partido e percentual */
+.card .partido,
+.card .percentual {
+  font-size: 14px;
+  margin: 3px 0;
+}
+
+/* Resultado */
+.resultado {
+  font-size: 16px;
+  color: red;
+  font-weight: bold;
+  margin-top: 15px;
+}
