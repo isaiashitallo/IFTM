@@ -1,4 +1,4 @@
-/* Reset básico */
+/* estilo padrão */
 * {
   margin: 0;
   padding: 0;
@@ -13,17 +13,17 @@ body {
   padding: 20px;
 }
 
-/* Título */
 h1 {
   font-size: 20px;
   margin-bottom: 15px;
 }
 
-/* Botão */
+/* btn */
 form {
   margin-bottom: 20px;
 }
 
+/* Estilo do btn */
 #btnGerarResultado {
   background-color: green;
   color: #fff;
@@ -34,11 +34,8 @@ form {
   cursor: pointer;
 }
 
-#btnGerarResultado:hover {
-  background-color: darkgreen;
-}
 
-/* Container dos candidatos */
+/* container */
 .candidatos {
   display: flex;
   justify-content: center;
@@ -46,7 +43,6 @@ form {
   margin: 20px 0;
 }
 
-/* Card */
 .card {
   border: 3px solid #000;
   border-radius: 60px;
@@ -56,16 +52,18 @@ form {
   background-color: #fff;
 }
 
-/* Imagem do candidato */
+/* img */
 .card img {
   width: 120px;
   height: 150px;
+  /* Essa propriedade é mt boa para imagem, redimensiona no container e mantém proporcao */
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
-/* Nome */
+/* nome e card */
+
 .card .nome {
   font-size: 14px;
   font-weight: bold;
@@ -73,14 +71,14 @@ form {
   text-transform: uppercase;
 }
 
-/* Partido e percentual */
+/* partido e percent */
+
 .card .partido,
 .card .percentual {
-  font-size: 14px;
+  /* font-size: 14px; */
   margin: 3px 0;
 }
 
-/* Resultado */
 .resultado {
   font-size: 16px;
   color: red;
