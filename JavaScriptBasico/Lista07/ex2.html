@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="caixa1" placeholder="Digite algo">
+        <input type="text" id="caixa2" placeholder="Resultado">
+        <select id="tempo">
+            <option value="">Selecione...</option>
+            <script>
+                for (let i = 1; i <= 10; i++) {
+                    document.write(`<option value="${i}">${i}</option>`);
+                }
+            </script>
+        </select>
+        <button type="button" id="btnTransferir">Transferir</button>
+    </form>
+    <script src="script/js2.js"></script>
+</body>
+
+</html>
