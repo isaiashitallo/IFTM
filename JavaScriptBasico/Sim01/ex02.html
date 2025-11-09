@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ex02</title>
+</head>
+
+<body>
+    <h3>1) Texto informado pelo usuário na página anterior</h3>
+    <p id="textoSalvo"></p>
+
+    <h3>2) Você gostaria de analisar a informação disponibilizada pelo usuário na página anterior?</h3>
+
+    <form action="" id="selecao">
+        <select name="" id="tipoSelecao">
+            <option value="">Sim</option>
+            <option value="">Não</option>
+        </select>
+        <br>
+        <p>OBS: Se você responder "Não" na pergunta anterior (2), por favor informe um novo texto na caixa abaixo:</p>
+
+        <input type="text" id="caixa2">
+        <br>
+        <input type="button" id="btnAnalisar" value="Analisar">
+
+        <hr>
+
+        <h3>3) Quantidade de palavras contidas no texto: <span id="totalPalavras"></span></h3>
+
+
+        <h3>4) Quantidade de palavras iniciadas com a letra M: <input type="text" id="palComM" disabled></h3>
+
+        <h3>5) Primeira palavra do texto: <input type="text" id="priPal" disabled></h3>
+
+        <h3>6) Segunda palavra do texto: <input type="text" id="segPal" disabled></h3>
+
+        <h3>7) Última palavra do texto:     <input type="text" id="ultPal" disabled></h3>
+
+        <input type="button" id="btnPapaiNoel" value="Abrir a página do Papai Noel">
+    </form>
+    <script src="script/js2.js"></script>
+</body>
+
+</html>

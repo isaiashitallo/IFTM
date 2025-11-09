@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex03</title>
+    <style>
+        input[type="number"] {
+            width: 60px;
+            text-align: center;
+            margin-left: 5px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+
+        p {
+            font-size: 22px;
+            font-weight: bold;
+            /* color: blue; */
+        }
+    </style>
+</head>
+
+<body>
+    <label for="quantidade">Quantas falas do Papai Noel!?: </label>
+    <input type="number" id="quantidade" min="1" value="1">
+
+    <br>
+    <button id="btnMostrar">Mostrar falas do Papai Noel</button>
+
+    <div id="falas"></div>
+
+    <script src="script/js3.js"></script>
+</body>
+
+</html>
