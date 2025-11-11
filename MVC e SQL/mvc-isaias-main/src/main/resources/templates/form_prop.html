@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Proprietário</title>
+</head>
+<body>
+    <h1>Cadastro de Proprietário</h1>
+    
+    <form th:action="@{/cad-prop}" th:object="${proprietario}" method="post">
+        <div>
+            <label>Nome:</label>
+            <input type="text" th:field="*{nome}" required>
+        </div>
+        <div>
+            <label>Telefone:</label>
+            <input type="text" th:field="*{telefone}" required>
+        </div>
+        <button type="submit">Salvar</button>
+    </form>
+    
+    <br>
+    <a th:href="@{/rel-prop}">Ver Relatório de Proprietários</a> |
+    <a th:href="@{/cad-apto}">Cadastrar Apartamento</a>
+</body>
+</html>

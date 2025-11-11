@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório de Proprietários</title>
+</head>
+<body>
+    <h1>Relatório de Proprietários</h1>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="proprietario : ${proprietarios}">
+                <td th:text="${proprietario.id}"></td>
+                <td th:text="${proprietario.nome}"></td>
+                <td th:text="${proprietario.telefone}"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br>
+    <a th:href="@{/cad-prop}">Cadastrar Novo Proprietário</a> |
+    <a th:href="@{/cad-apto}">Cadastrar Apartamento</a> |
+    <a th:href="@{/rel-apto}">Ver Relatório de Apartamentos</a>
+</body>
+</html>

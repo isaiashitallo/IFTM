@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório de Apartamentos</title>
+</head>
+<body>
+    <h1>Relatório de Apartamentos</h1>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Quartos</th>
+                <th>Tipo Ocupação</th>
+                <th>Proprietário</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="apartamento : ${apartamentos}">
+                <td th:text="${apartamento.numeroPorta}"></td>
+                <td th:text="${apartamento.quantidadeQuartos}"></td>
+                <td th:text="${apartamento.tipoOcupacao}"></td>
+                <td th:text="${apartamento.proprietario.nome}"></td>
+                <td th:text="${apartamento.proprietario.telefone}"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br>
+    <a th:href="@{/cad-apto}">Cadastrar Novo Apartamento</a> |
+    <a th:href="@{/cad-prop}">Cadastrar Proprietário</a> |
+    <a th:href="@{/rel-prop}">Ver Relatório de Proprietários</a>
+</body>
+</html>
