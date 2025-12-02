@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label>Data de nascimento: </label>
+        <input type="text" id="caixa1" value="01/01/1900">
+        <button type="button" id="btn1">Validar</button>
+        <br><br>
+        <br><br>
+        <label>CPF: </label>
+        <input type="text" id="caixa2" onkeypress="inserirMascara('caixa2','xxx.xxx.xxx-xx')"value="123.456.789-11">
+        <button type="button" id="btn2">Validar</button>
+        <br><br>
+        <br><br>
+        <label>Número de matrícula de um aluno: </label>
+        <input type="text" id="caixa3" value="ifTm-321/123-99">
+        <button type="button" id="btn3">Validar</button>
+        <br><br>
+        <br><br>
+        <label>Código de uma disciplina do IFTM: </label>
+        <input type="text" id="caixa4" value="MT-34.645-IFTM" onkeypress="inserirMascara('caixa4','MT-xx.xxx-IFTM')">
+        <button type="button" id="btn4">Validar</button>
+        <br><br>
+        <br><br>
+        <label>Código de uma disciplina do IFTM (versão 2): </label>
+        <input type="text" id="caixa5" value="MT-34.645-iFtM" onkeypress="inserirMascara('caixa5','MT-xx.xxx-IFTM')">
+        <button type="button" id="btn5">Validar</button>
+        <br><br>
+        <br><br>
+        <label>Código de uma disciplina do IFTM(versão 3): </label>
+        <input type="text" id="caixa6" value="M T-34.645-IFT M">
+        <button type="button" id="btn6">Validar</button>
+        <br><br>
+        <br><br>
+        <label>Código de uma disciplina do IFTM(versão 4): </label>
+        <input type="text" id="caixa7" value="MT-34.645-IFTM Uberlândia Centro">
+        <button type="button" id="btn7">Validar</button>
+        <br><br>
+        <br><br>
+        <label>Nome de campus do IFTM: </label>
+        <input type="text" id="caixa8" value="IFTM campus Uberlândia Centro">
+        <button type="button" id="btn8">Validar</button>
+        <br><br>
+        <br><br>
+        <label>Telefone: </label>
+        <input type="text" id="caixa9" value="+55(34)99999-9999" onkeypress="inserirMascara('caixa9','+xx(xx)xxxxx-xxxx')">
+        <button type="button" id="btn9">Validar</button>
+        <br><br>
+        <br><br>
+        <label>Telefone (versão 2): </label>
+        <input type="text" id="caixa10" value="(034)99999-9999">
+        <button type="button" id="btn10">Validar</button>
+        <br><br>
+        <br><br>
+        <label>Altura de uma pessoa: </label>
+        <input type="text" id="caixa11" value="1.75">
+        <button type="button" id="btn11">Validar</button>
+        <br><br>
+        <br><br>
+        <label>Faturamento anual de uma empresa: </label>
+        <input type="text" id="caixa12" value="R$999.999.999.999,99">
+        <button type="button" id="btn12">Validar</button>
+        <br><br>
+        <br><br>
+        <label>Cronômetro: </label>
+        <input type="text" id="caixa13" value="13:30:45:12" onkeypress="inserirMascara('caixa13','xx:xx:xx:xx')">
+        <button type="button" id="btn13">Validar</button>
+        <br><br>
+        <br><br>
+        <label>Senha: </label>
+        <input type="text" id="caixa14" value="321a.&apMb.aei.Ab0-asf+_,/*.cq">
+        <button type="button" id="btn14">Validar</button>
+        <br><br>
+
+    </form>
+    <script src="script/js.js"></script>
+    <script src="../jMaskWiFi.js"></script>
+</body>
+
+</html>
