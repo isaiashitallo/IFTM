@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+
+    <!-- Barra superior mostrando usuário logado -->
+    <div class="topbar">
+        <span>Logado como: <b id="usuarioLogado">-</b></span>
+
+        <div>
+            <label>Dificuldade:</label>
+            <select id="seletorDificuldade">
+                <option value="facil">Fácil</option>
+                <option value="medio">Médio</option>
+                <option value="dificil">Difícil</option>
+            </select>
+
+            <button id="botaoPausar" class="btn small">Pause</button>
+            <button id="botaoParar" class="btn small">Stop</button>
+            <button id="botaoReiniciar" class="btn small">Restart</button>
+            <button id="botaoSair" class="btn small danger">Exit</button>
+        </div>
+    </div>
+
+    <div class="game-area">
+
+        <!-- Área de preenchimento dos jogadores -->
+        <div class="card">
+            <label>Jogador 1 (X)</label>
+            <input id="nomeJogador1">
+
+            <label>Jogador 2 (O)</label>
+            <input id="nomeJogador2">
+
+            <button id="botaoIniciarJogo" class="btn primary">Iniciar Jogo</button>
+            <button id="botaoVerRanking" class="btn">Ver Ranking</button>
+
+            <p class="timer">Tempo: <span id="tempoExibicao">00:00</span></p>
+        </div>
+
+        <!-- Tabuleiro do jogo -->
+        <div class="board card" id="tabuleiro">
+            <div class="celula" data-indice="0"></div>
+            <div class="celula" data-indice="1"></div>
+            <div class="celula" data-indice="2"></div>
+
+            <div class="celula" data-indice="3"></div>
+            <div class="celula" data-indice="4"></div>
+            <div class="celula" data-indice="5"></div>
+
+            <div class="celula" data-indice="6"></div>
+            <div class="celula" data-indice="7"></div>
+            <div class="celula" data-indice="8"></div>
+        </div>
+
+        <!-- Exibição do status atual -->
+        <div class="card">
+            <p>Jogador atual: <b id="jogadorAtualExibicao">-</b></p>
+            <p>Rodada: <span id="rodadaExibicao">0</span></p>
+        </div>
+
+    </div>
+
+    <script src="Js/jogo.js"></script>
+
+</body>
+
+</html>
