@@ -1,21 +1,14 @@
 /*  
     login.js
     --------
-    Este arquivo lida com o processo de LOGIN do usuário.
-
-    Aqui evitamos funções avançadas e utilizamos apenas:
-    - let
-    - if
-    - objetos simples
-    - localStorage
+    Login do usuário.
 */
 
 // Função para pegar os usuários salvos no navegador
-// Motivo: todo cadastro salva no localStorage, então precisamos recuperar isso
 function obterUsuarios() {
     let dados = localStorage.getItem("usuariosSalvos");
 
-    // Se houver algum registro, transformamos de texto → objeto
+    // texto para objeto
     if (dados) {
         return JSON.parse(dados);
     }
@@ -27,7 +20,7 @@ function obterUsuarios() {
 document.getElementById("formLogin").addEventListener("submit", function (evento) {
 
     // Evita que a página recarregue quando o formulário é enviado
-    evento.preventDefault();
+    evento.preventDefault(); //p impedir envio automatico
 
     // Pegamos os valores digitados
     let usuarioDigitado = document.getElementById("usuarioLogin").value;
@@ -54,3 +47,4 @@ document.getElementById("formLogin").addEventListener("submit", function (evento
     // Envia para o jogo
     window.location.href = "jogo.html";
 });
+
