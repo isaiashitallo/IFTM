@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600;800&display=swap");
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* body {
+    font-family: "Inter", sans-serif;
+    color: var(--color-text);
+} */
+
+:root {
+    /* Espaçamentos */
+    --internal-space: 10px;
+
+    /* Espaçamentos */
+    --space-0: 0px;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --space-8: 64px;
+    --space-9: 80px;
+    --space-10: 96px;
+
+    /* Layout */
+    --max-width-container: 1250px;
+    --border-main-title: 25px;
+    --border-box: 10px;
+
+    /* Cores */
+    --bg-emphasis: rgb(241, 241, 241);
+    --color-text: #152660;
+
+    /* --color-text: blue; */
+    --color-buttons: #AF872D;
+
+    /* Tamanho das fontes */
+    --font-subtitle2: 28px;
+    --font-paragraph: 16px;
+
+    /* add destaque */
+    --color-highlight: #af872d;
+    --color-highlight-text: white;
+}
+
+
+/* body */
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--color-text);
+    background-color: white;
+    line-height: 1.6;
+}
+
+body p {
+    font-size: var(--font-paragraph);
+}
+
+
+.container {
+    max-width: var(--max-width-container);
+    margin: auto;
+    padding: 0 var(--space-5);
+}
+
+
+
+header {
+    background-color: var(--color-text);
+    color: white;
+    padding: var(--space-5) 0;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+
+
+section {
+    padding: var(--space-9) 0;
+}
+
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+    align-items: center;
+}
+
+.card {
+    background-color: var(--bg-emphasis);
+    padding: var(--space-6);
+    border-radius: var(--border-box);
+}
+
+section img {
+    width: 50px;
+    display: block;
+    margin: 0 auto var(--space-4);
+}
+
+
+.card h3 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: var(--space-4);
+    font-weight: 800;
+}
+
+.card p {
+    font-size: var(--font-paragraph);
+    text-align: left;
+    margin-bottom: var(--space-5);
+}
+
+.card details {
+    margin-top: var(--space-4);
+    padding-top: var(--space-4);
+    border-top: 1px solid #d0d0d0;
+}
+
+.card summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--color-buttons);
+    margin-bottom: var(--space-3);
+}
+
+/* listas */
+.card details ul {
+    margin-left: var(--space-5);
+    padding-left: var(--space-3);
+}
+
+.card details ul li {
+    margin-bottom: var(--space-2);
+    font-size: 14px;
+}
+
+/* ========================================= */
+/* JS */
+/* ========================================= */
+
+.card-destaque {
+    background-color: var(--color-text);
+    color: white;
+
+    /* Escala */
+    padding: var(--space-7);
+    /* Agrupamento */
+    border: 4px solid var(--color-highlight);
+}
+
+.card-destaque img {
+    width: 70px;
+    margin-bottom: var(--space-5);
+}
+
+.card-destaque h3 {
+    font-size: 38px;
+    margin-bottom: var(--space-5);
+}
+
+
+.card-destaque p {
+    font-size: 17px;
+}
+
+
+
+.card-destaque details {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+
+/* ========================================= */
+/* CSS */
+/* ========================================= */
+.frase-css {
+    font-size: var(--font-paragraph);
+    font-weight: 800;
+    line-height: 1.6;
+
+    background: linear-gradient(90deg, #152660, #6a5acd, #c04cff, #af872d);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+
+    text-align: left;
+}
+
+.frase-css:hover {
+    transform: rotate(2deg) scale(1.05);
+}
+
+/* Summary */
+
+.card-destaque summary {
+    color: var(--color-highlight);
+
+    font-size: 17px;
+}
+
+/* Chamada */
+.card-destaque .chamada {
+    margin-top: var(--space-5);
+    margin-bottom: 0;
+    padding-top: var(--space-4);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    font-weight: 800;
+    text-align: center;
+    color: white;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: var(--color-text);
+    color: white;
+    padding: var(--space-5) 0;
+    text-align: center;
+}
+
+
+/* rsponsividade */
+@media (max-width: 800px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-destaque {
+        order: -1;
+    }
+
+    .card {
+        padding: var(--space-5);
+    }
+}
