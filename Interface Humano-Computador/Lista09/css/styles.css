@@ -1,0 +1,115 @@
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    background: #fff;
+    margin: 20px;
+    line-height: 1.5;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 28px;
+}
+
+.campo {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+input:focus, button:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+.acoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+button {
+    padding: 8px 14px;
+    border: 1px solid #555;
+    border-radius: 2px;
+    background: #eee;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+.mensagem {
+    margin: 10px 0;
+}
+
+.erro {
+    color: #b00020;
+}
+
+/* relembrando: # aplica no id resultados */
+#resultados {
+    padding-left: 22px;
+}
+
+#resultados li {
+    margin-bottom: 12px;
+}
+
+
+
+/* deixa oculto, só aparece qnd = false */
+[hidden] {
+    display: none !important;
+}
+
+
+
+/* Botão principal */
+button[type="submit"] {
+    background-color: #222;
+    color: white;
+    border: 1px solid #222;
+}
+
+/* Botão secundário */
+button[type="reset"] {
+    background-color: white;
+    color: #333;
+    border: 1px solid #999;
+}
+
+/* Efeito ao passar o mouse */
+button[type="submit"]:hover {
+    background-color: #444;
+}
+
+button[type="reset"]:hover {
+    background-color: #eee;
+}
